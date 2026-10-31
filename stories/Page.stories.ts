@@ -11,6 +11,25 @@ const meta = {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
+  args: {
+    defaultUserName: 'Jane Doe',
+    header: {
+      logo: '◆',
+      brandName: 'Acme',
+      welcomePrefix: 'Welcome,',
+      loginLabel: 'Log in',
+      logoutLabel: 'Log out',
+      signUpLabel: 'Sign up',
+    },
+    content: {
+      heading: 'Pages in Storybook',
+      intro: 'We recommend building UIs with a component-driven process.',
+      body: 'Render pages with mock data so states can be reviewed without navigating through the app.',
+      tips: ['Compose data from child component story args.', 'Mock services inside Storybook.'],
+      tipLabel: 'Tip',
+      tipText: 'Adjust the canvas width with the Viewports addon in the toolbar.',
+    },
+  },
 } satisfies Meta<typeof Page>;
 
 export default meta;

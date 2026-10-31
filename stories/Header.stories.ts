@@ -14,6 +14,12 @@ const meta = {
     layout: 'fullscreen',
   },
   args: {
+    logo: '◆',
+    brandName: 'Acme',
+    welcomePrefix: 'Welcome,',
+    loginLabel: 'Log in',
+    logoutLabel: 'Log out',
+    signUpLabel: 'Sign up',
     onLogin: fn(),
     onLogout: fn(),
     onCreateAccount: fn(),
